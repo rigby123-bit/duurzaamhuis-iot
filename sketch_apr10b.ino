@@ -3,12 +3,12 @@
 int minLDR = 1023;
 int maxLDR = 0;
 
-// Functie 1: geeft true bij weinig licht (onder 500)
+
 bool weinigLicht(int waarde) {
   return waarde < 500;
 }
 
-// Functie 2: zet D5 en D6 aan op basis van LDR waarde
+
 void stuurLampen(int waarde) {
   if (waarde >= 500 && waarde < 700) {
     digitalWrite(5, HIGH);
